@@ -18,6 +18,10 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13
 with tab1:
     st.header("📈 Latest Forecast")
 
+    # ✅ Manual Refresh
+    if st.button("🔄 Refresh Dashboard"):
+        st.rerun()
+
     latest_date = date.today().strftime("%Y-%m-%d")
     forecast_path = f"scripts/core/forecast_{latest_date}.csv"
 
