@@ -3,14 +3,18 @@ import pandas as pd
 import os
 from datetime import date
 import matplotlib.pyplot as plt
+
+# ✅ MUST BE FIRST Streamlit command
+st.set_page_config(page_title="Quant Dashboard", layout="wide")
+
 # === Secure Access ===
 password = st.text_input("🔒 Enter dashboard password", type="password")
+stored_pw = st.secrets.get("DASHBOARD_PASSWORD", "")
 
-if password != st.secrets["DASHBOARD_PASSWORD"]:
+if password != stored_pw:
     st.warning("Incorrect password or not provided.")
     st.stop()
-    
-st.set_page_config(page_title="Quant Dashboard", layout="wide")
+
 st.title("📊 Quant Forecast & Backtest Dashboard")
 
 # === Tabs ===
