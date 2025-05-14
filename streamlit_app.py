@@ -3,7 +3,13 @@ import pandas as pd
 import os
 from datetime import date
 import matplotlib.pyplot as plt
+# === Secure Access ===
+password = st.text_input("🔒 Enter dashboard password", type="password")
 
+if password != st.secrets["DASHBOARD_PASSWORD"]:
+    st.warning("Incorrect password or not provided.")
+    st.stop()
+    
 st.set_page_config(page_title="Quant Dashboard", layout="wide")
 st.title("📊 Quant Forecast & Backtest Dashboard")
 
