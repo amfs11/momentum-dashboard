@@ -317,7 +317,7 @@ with tab9:
     # Optional highlighting of top model – disabled for now
     # summary_df["🏆 Top Performer"] = summary_df["Model"].apply(lambda m: "✅" if m == top_model else "")
 
-    st.dataframe(summary_df.set_index("Model"))
+    # st.dataframe(summary_df.set_index("Model"))
 
 # === Tab 10: Model Sharpe Trend
 with tab10:
