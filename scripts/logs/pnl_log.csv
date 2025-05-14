@@ -1,0 +1,2 @@
+ticker,buy_time,sell_time,qty,entry_price,exit_price,pnl_dollars,pnl_percent,holding_days
+AAPL,2025-05-14T10:00:57.651239,2025-05-16T06:30:00,2,211.87,218.0,12.26,2.89,1
