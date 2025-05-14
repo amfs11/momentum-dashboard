@@ -1,5 +1,13 @@
 streamlit
 pandas
-fpdf
-joblib
+matplotlib
+numpy
 python-dotenv
+yagmail
+scikit-learn
+joblib
+xgboost
+lightgbm
+catboost
+vaderSentiment
+yfinance
