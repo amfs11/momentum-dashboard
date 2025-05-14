@@ -408,9 +408,7 @@ with tab13:
         st.image(sharpe_path, caption="Monthly Sharpe Ratios")
 
     if os.path.exists(monthly_summary_path):
-        df = pd.read_csv(monthly_summary_path)
-        st.dataframe(df, use_container_width=True)
-        st.metric("Avg Sharpe", round(df["sharpe"].mean(), 2))
-        st.metric("Hit Rate", f"{df['hit_rate'].mean():.2%}")
-    else:
-        st.info("No backtest summary available yet.")
+        summary_df = pd.read_csv(monthly_summary_path)
+        st.dataframe(summary_df, use_container_width=True)
+        st.metric("Avg Sharpe", round(summary_df["sharpe"].mean(), 2))
+        st.metric("Hit Rate", f"{summary_df['hit_rate'].mean():.2%}")
