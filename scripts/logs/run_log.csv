@@ -41,3 +41,8 @@ date,model,n_predictions,avg_prediction_pct,fallback_pct
 2025-05-14,EnsembleAverage,20,-0.41,0.0
 2025-05-14,EnsembleAverage,20,-0.41,0.0
 2025-05-15,EnsembleAverage,20,-0.99,0.0
+2025-05-15,EnsembleAverage,20,-0.32,85.0
+2025-05-16,EnsembleAverage,20,0.06,0.0
+2025-05-16,EnsembleAverage,20,-0.02,0.0
+2025-05-16,EnsembleAverage,20,0.02,0.0
+2025-05-16,EnsembleAverage,20,0.02,0.0
